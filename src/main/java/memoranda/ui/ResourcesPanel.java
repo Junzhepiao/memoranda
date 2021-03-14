@@ -64,7 +64,7 @@ public class ResourcesPanel extends JPanel {
         newResB.setEnabled(true);
         newResB.setMaximumSize(new Dimension(24, 24));
         newResB.setMinimumSize(new Dimension(24, 24));
-        newResB.setToolTipText(Local.getString("New resource"));
+        newResB.setToolTipText(Local.getString("New resource")); 
         newResB.setRequestFocusEnabled(false);
         newResB.setPreferredSize(new Dimension(24, 24));
         newResB.setFocusable(false);
@@ -188,7 +188,7 @@ public class ResourcesPanel extends JPanel {
     }
 
     void newResB_actionPerformed(ActionEvent e) {
-        AddResourceDialog dlg = new AddResourceDialog(App.getFrame(), Local.getString("New resource"));
+        AddResourceDialog dlg = new AddResourceDialog(App.getFrame(), Local.getString("Add New resource")); // change title of the add New Resource
         Dimension frmSize = App.getFrame().getSize();
         Point loc = App.getFrame().getLocation();
         dlg.setLocation((frmSize.width - dlg.getSize().width) / 2 + loc.x, (frmSize.height - dlg.getSize().height) / 2 + loc.y);
