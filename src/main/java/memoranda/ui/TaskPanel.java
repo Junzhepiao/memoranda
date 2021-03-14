@@ -489,7 +489,7 @@ public class TaskPanel extends JPanel {
     }
 
     void newTaskB_actionPerformed(ActionEvent e) {
-        TaskDialog dlg = new TaskDialog(App.getFrame(), Local.getString("New task"));
+        TaskDialog dlg = new TaskDialog(App.getFrame(), Local.getString("Add New task")); // change title of add New Task
         
         //XXX String parentTaskId = taskTable.getCurrentRootTask();
         
